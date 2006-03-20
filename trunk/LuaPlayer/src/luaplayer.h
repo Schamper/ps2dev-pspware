@@ -51,7 +51,7 @@ int HANDLE##_register(lua_State *L) { \
 	return 1; \
 }
 
-extern int runScript(const char* script, bool isStringBuffer);
+extern const char * runScript(const char* script, bool isStringBuffer);
 extern void luaC_collectgarbage (lua_State *L);
 
 
